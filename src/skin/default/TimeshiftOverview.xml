@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<screen backgroundColor="background" flags="wfNoBorder" name="TimeshiftOverview" position="center,center" size="1200,820">
+	<widget font="Bold;32" noWrap="1" position="20,30" render="Label" size="1160,43" source="Title" transparent="1"/>
+	<widget enableWrapAround="1" position="20,100" render="Listbox" scrollbarMode="showOnDemand" size="1180,560" source="list" transparent="1">
+		<convert type="TemplatedMultiContent"> { "template": [ MultiContentEntryPixmapAlphaTest(pos=(0,5),size=(120,60),png=0, backcolor=None, flags=BT_SCALE | BT_KEEP_ASPECT_RATIO), MultiContentEntryText(pos=(150,0), size=(400,70), flags=RT_VALIGN_CENTER, text=1), MultiContentEntryText(pos=(570,0), size=(260,70), flags=RT_VALIGN_CENTER, text=2), MultiContentEntryText(pos=(850,0), size=(300,70), flags=RT_VALIGN_CENTER, text=3), ], "fonts": [gFont("Regular",30)], "itemHeight":70 } </convert>
+	</widget>
+	<widget font="Regular;26" halign="center" name="key_red" position="0,770" size="300,35" transparent="1"/>
+	<widget font="Regular;26" halign="center" name="key_green" position="300,770" size="300,35" transparent="1"/>
+	<widget font="Regular;26" halign="center" name="key_yellow" position="600,770" size="300,35" transparent="1"/>
+	<widget font="Regular;26" halign="center" name="key_blue" position="900,770" size="300,35" transparent="1"/>
+	<eLabel backgroundColor="#ff0000" position="0,810" size="300,10"/>
+	<eLabel backgroundColor="#669900" position="300,810" size="300,10"/>
+	<eLabel backgroundColor="#e5b243" position="600,810" size="300,10"/>
+	<eLabel backgroundColor="#3366cc" position="900,810" size="300,10"/>
+</screen>
