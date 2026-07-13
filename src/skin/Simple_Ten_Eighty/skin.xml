@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<skin>
+	<screen backgroundColor="black" flags="wfNoBorder" name="TimeshiftOverview" position="center,center" size="1200,800">
+		<panel name="TopTemplate"/>
+		<widget enableWrapAround="1" position="20,110" render="Listbox" scrollbarMode="showOnDemand" size="e-40,560" source="list" transparent="1">
+			<convert type="TemplatedMultiContentEx"> { "var": ( ih := 70, hspace := 10, thumb_w := ih * 2 - 10, thumb_h := ih - 10, x1 := hspace // 2 + thumb_w + hspace, col3_w := ih * 3, col2_w := (e - x1) // 4, x3 := e - col3_w - hspace // 2, x2 := x3 - col2_w - hspace, col1_w := x2 - x1 - hspace ), "template": [ MultiContentEntryPixmapAlphaTest(pos=(hspace//2, (ih-thumb_h)//2), size=(thumb_w, thumb_h), png=0, backcolor=None, flags=BT_SCALE|BT_KEEP_ASPECT_RATIO), MultiContentEntryText(pos=(x1, 0), size=(col1_w, ih), flags=RT_VALIGN_CENTER, text=1), MultiContentEntryText(pos=(x2, 0), size=(col2_w, ih), flags=RT_VALIGN_CENTER, text=2), MultiContentEntryText(pos=(x3, 0), size=(col3_w, ih), flags=RT_VALIGN_CENTER|RT_HALIGN_RIGHT, text=3) ], "fonts": [gFont("Regular", 26)], "itemHeight": ih } </convert>
+		</widget>
+		<ePixmap pixmap="border/smallshadowline.png" position="0,e-60" size="e,3"/>
+		<panel name="ButtonTemplate"/>
+	</screen>
+	<screen backgroundColor="secondBG" flags="wfNoBorder" name="CockpitPlayer" position="150,900" size="1620,150" title="CockpitPlayer">
+		<widget backgroundColor="secondBG" borderColor="black" borderWidth="2" font="Regular;36" foregroundColor="foreground" halign="center" position="c-624,6" render="Label" size="1248,74" source="Service" valign="center" zPosition="1">
+			<convert type="COCEventName">Name</convert>
+		</widget>
+		<ePixmap pixmap="dvr/scale1024.png" position="42,87" size="1536,12" zPosition="1"/>
+		<widget alphatest="blend" foregroundColor="yellow" position="42,87" render="Progress" size="1536,12" source="Service" transparent="1" zPosition="5">
+			<convert type="COCServicePosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" foregroundColor="darkgrey" position="42,87" render="Progress" size="1536,12" source="Service" transparent="1" zPosition="6">
+			<convert type="COCBeforeTSPosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" foregroundColor="red" position="42,87" render="Progress" size="1536,12" source="Service" transparent="1" zPosition="4">
+			<convert type="COCRecordPosition">Position</convert>
+		</widget>
+		<widget backgroundColor="secondBG" borderColor="black" borderWidth="2" font="Regular;33" foregroundColor="foreground" halign="left" position="42,46" render="Label" size="135,37" source="Service" valign="center" zPosition="4">
+			<convert type="COCServicePosition">Position,Negate</convert>
+		</widget>
+		<widget backgroundColor="secondBG" borderColor="black" borderWidth="2" font="Regular;33" foregroundColor="foreground" halign="right" position="1402,46" render="Label" size="175,37" source="Service" valign="center" zPosition="4">
+			<convert type="COCServicePosition">Remaining</convert>
+		</widget>
+		<widget alphatest="on" pixmap="buttons/rec.png" position="1590,79" render="Pixmap" size="30,30" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="secondBG" borderWidth="2" font="Regular;33" foregroundColor="foreground" halign="right" noWrap="1" position="1428,4" render="Label" size="150,37" source="Service" valign="center" zPosition="1">
+			<convert type="COCServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget backgroundColor="background" font="Bold;26" halign="center" position="c-109,105" render="Label" size="219,31" source="Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">Length</convert>
+		</widget>
+		<widget alphatest="on" name="statusicon" pixmaps="icons/mp_play.png,icons/mp_pause.png,icons/mp_stop.png,icons/mp_forward.png,icons/mp_backward.png,icons/mp_slow.png" position="42,110" size="25,25" zPosition="5"/>
+		<widget backgroundColor="secondBG" borderColor="black" borderWidth="3" font="Regular;30" name="speed" position="72,105" size="110,40" transparent="1" zPosition="5"/>
+		<widget alphatest="on" pixmap="infobar/ico_dolby_on.png" position="1467,107" render="Pixmap" size="50,32" source="Service" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TimeshiftCockpit/skin/default/images/ico_format_hd.png" position="1518,107" render="Pixmap" size="60,32" source="Service" zPosition="4">
+			<convert type="ServiceInfo">IsHD</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TimeshiftCockpit/skin/default/images/ico_format_16_9.png" position="1518,107" render="Pixmap" size="60,32" source="Service" zPosition="2">
+			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TimeshiftCockpit/skin/default/images/ico_format_4_3.png" position="1518,107" render="Pixmap" size="60,32" source="Service" zPosition="2">
+			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>
+	<screen name="CockpitPlayerSummary" position="0,0" size="395,240">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TimeshiftCockpit/skin/images/display_bg.png" position="0,0" size="395,240" zPosition="-1"/>
+		<widget font="FdLcD;50" halign="center" position="0,0" render="Label" size="395,125" source="parent.Service" transparent="1" valign="center">
+			<convert type="COCEventName">Name</convert>
+		</widget>
+		<widget alphatest="blend" borderWidth="1" foregroundColor="yellow" position="0,140" render="Progress" size="395,15" source="parent.Service" transparent="1" zPosition="2">
+			<convert type="COCServicePosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" borderWidth="1" foregroundColor="darkgrey" position="0,140" render="Progress" size="395,15" source="parent.Service" transparent="1" zPosition="3">
+			<convert type="COCBeforeTSPosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" borderWidth="1" foregroundColor="red" position="0,140" render="Progress" size="395,15" source="parent.Service" transparent="1" zPosition="1">
+			<convert type="COCRecordPosition">Position</convert>
+		</widget>
+		<widget font="FdLcD;60" halign="left" position="0,160" render="Label" size="230,80" source="parent.Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget font="FdLcD;60" halign="right" position="240,160" render="Label" size="150,80" source="parent.Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">Remaining,ShowNoSeconds</convert>
+		</widget>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="ScreenPVRState" position="center,center" size="100,160" zPosition="1000">
+		<widget alphatest="blend" name="state_pic" position="0,0" size="100,100"/>
+		<widget backgroundColor="transparent" font="Regular;40" halign="center" name="state" position="0,110" size="100,54" transparent="1" valign="center"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="BufferingProgress" position="center,center" size="100,100">
+		<widget alphatest="blend" name="pic" position="center,center" size="100,100"/>
+	</screen>
+	<screen name="BufferingProgressSummary" position="0,0" size="400,240">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TimeshiftCockpit/skin/images/display_bg.png" position="0,0" size="400,240" zPosition="-1"/>
+		<widget name="lcd_pic" position="150,70" size="100,100" transparent="1"/>
+	</screen>
+</skin>
