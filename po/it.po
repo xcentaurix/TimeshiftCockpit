@@ -1,3 +1,5 @@
+# Signed-off-by: Dario Croci <spaeleus@croci.org>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: TimeshiftCockpit\n"
@@ -149,6 +151,21 @@ msgid "Open setup"
 msgstr "Impostazioni"
 
 msgid "Cover source"
+msgstr ""
+
+msgid "Infobar/Play"
+msgstr ""
+
+msgid "Play/Pause"
+msgstr ""
+
+msgid "Stop playback"
+msgstr ""
+
+msgid "EPG Info"
+msgstr ""
+
+msgid "Do you want to resume playback at position: %d:%02d:%02d?"
 msgstr ""
 
 msgid "automatic"

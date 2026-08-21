@@ -9,7 +9,7 @@ import Screens.InfoBar
 from .__init__ import _
 from .Debug import logger
 from .Version import VERSION
-from .ConfigInit import ConfigInit
+from . import ConfigInit  # noqa: F401, pylint: disable=unused-import
 from .InfoBar import InfoBar
 from .SetupScreen import SetupScreen
 from .FileUtils import deleteFiles
@@ -36,7 +36,6 @@ def autoStart(reason, **__):
 
 
 def Plugins(**__):
-    ConfigInit()
     descriptors = [
         PluginDescriptor(
             where=[
