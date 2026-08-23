@@ -31,8 +31,8 @@ from .CutListUtils import secondsToPts
 class CockpitPlayerSummary(ScreenSummary):
 
     def __init__(self, session, parent):
-        Screen.__init__(self, session, parent)
-        self.skinName = "CockpitPlayerSummary"
+        ScreenSummary.__init__(self, session, parent=parent)
+        self.skinName = ["TimeshiftCockpitPlayerSummary", "ScreenSummary"]
 
 
 class CockpitPlayer(
@@ -50,7 +50,7 @@ class CockpitPlayer(
         self.service_ref = service_ref
 
         Screen.__init__(self, session)
-        self.skinName = "CockpitPlayer"
+        self.skinName = "TimeshiftCockpitPlayer"
         HelpableScreen.__init__(self)
         InfoBarShowHide.__init__(self)
         InfoBarBase.__init__(self)

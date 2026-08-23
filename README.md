@@ -1,17 +1,10 @@
 # TimeshiftCockpit (TSC)
-![Screenshot](ts1.jpg)
-
-MENU/REC key shows a choice list of timeshift events for easy playback/recording.
-![Screenshot](ts2.jpg)
-
-Configuration menu allows the preset of up to 2 permanent timeshift services.
-![Screenshot](ts4.jpg)
 
 Timeshifts Overview shows all active timeshift services.
-![Screenshot](ts5.jpg)
+![Screenshot](pic1.jpg)
 
-Job Management menu allows to manage all timeshift recordings.
-![Screenshot](ts6.jpg)
+Configuration menu allows the preset of up to 2 permanent timeshift services.
+![Screenshot](pic2.jpg)
 
 ## Features
 TimeshiftCockpit is a plugin for Open Enigma2 receivers that provides advanced timeshift functionality:
@@ -36,16 +29,18 @@ TimeshiftCockpit is a plugin for Open Enigma2 receivers that provides advanced t
 - YELLOW shows a list of timeshift recording jobs
 - BLUE shows a list of active timeshifts
 
-## Limitations
-
-- Supports Enigma2 on OpenVix and compatible distributions only
-- Is being tested on DM9xx only
-- TSC permanent timeshift is recommended for boxes with FBC tuners only (full permanent timeshift needs up to 4 tuners)
-
 ## Conflicts
 
 - TSC may conflict with other permanent timeshift plugins, so remove those before installing TimeshiftCockpit
 
-## Links
+## Disclaimer
+The project author is not responsible for how this software is used by others. It is not intended to be used for accessing or distributing copyrighted materials without authorization.
+Users are solely responsible for determining the legality of their actions.
 
+This repository has no control over the streams, links, or the legality of the content provided by the different hosts (including all mirror sites). It is the end user's responsibility to ensure the legal use of these streams, and we strongly recommend verifying that the content complies with all applicable laws, including copyright laws and regulations of your country's jurisdiction before use.
+
+## Limitations
+- Tested on OpenViX and OpenATV with DM900.
+
+## Links
 - Installation: https://xcentaurix.github.io/TimeshiftCockpit
