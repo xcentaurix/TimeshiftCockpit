@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TimeshiftCockpit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-12 09:10+0100\n"
+"POT-Creation-Date: 2026-08-27 16:20+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: xcentaurix\n"
 "Language-Team: \n"
@@ -70,6 +70,54 @@ msgstr "Timeshift-Verzeichnis existiert nicht"
 msgid "Inactive"
 msgstr "Inaktiv"
 
+msgid "Select Event"
+msgstr "Sendungsauswahl"
+
+msgid "No timeshift available for playback"
+msgstr "Timeshift ist auf diesem Kanal nicht verfügbar"
+
+msgid "min"
+msgstr "Min"
+
+msgid "Setup"
+msgstr "Einstellungen"
+
+msgid "TimeshiftCockpit has been %s. Restart Enigma2 now for this to take effect?"
+msgstr "TimeshiftCockpit wurde %. Soll Enigma2 neu gestartet werden, um dies aufzuführen?"
+
+msgid "activated"
+msgstr "aktiviert"
+
+msgid "deactivated"
+msgstr "deaktiviert"
+
+msgid "TS recording"
+msgstr "TS-Aufnahme"
+
+msgid "Timeshift recording"
+msgstr "Timeshift-Aufnahme"
+
+msgid "Exit"
+msgstr "Beenden"
+
+msgid "Timeshifts Overview"
+msgstr "Timeshift-Überblick"
+
+msgid "type"
+msgstr "Typ"
+
+msgid "fixed"
+msgstr "fest"
+
+msgid "variable"
+msgstr "variabel"
+
+msgid "recordings"
+msgstr "Aufnahmen"
+
+msgid "Configure timeshift modes and channels"
+msgstr "Konfiguration von Timeshift-Modi und -Kanälen"
+
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -124,50 +172,11 @@ msgstr "Log-Stufe"
 msgid "Select debug log level."
 msgstr "Auswahl der Log-Stufe"
 
-msgid "Select Event"
-msgstr "Sendungsauswahl"
-
-msgid "No timeshift available for playback"
-msgstr "Timeshift ist auf diesem Kanal nicht verfügbar"
-
-msgid "min"
-msgstr "Min"
-
 msgid "Write error while recording. Disk full?"
 msgstr "Schreibfehler während der Aufnahme, ist vielleicht die Platte voll?"
 
-msgid "TS recording"
-msgstr "TS-Aufnahme"
-
-msgid "Timeshift recording"
-msgstr "Timeshift-Aufnahme"
-
-msgid "Exit"
-msgstr "Beenden"
-
-msgid "Timeshifts Overview"
-msgstr "Timeshift-Überblick"
-
 msgid "Cancel"
 msgstr "Abbrechen"
-
-msgid "type"
-msgstr "Typ"
-
-msgid "fixed"
-msgstr "fest"
-
-msgid "variable"
-msgstr "variabel"
-
-msgid "recordings"
-msgstr "Aufnahmen"
-
-msgid "Setup"
-msgstr "Einstellungen"
-
-msgid "Configure timeshift modes and channels"
-msgstr "Konfiguration von Timeshift-Modi und -Kanälen"
 
 msgid "End"
 msgstr "Ende"

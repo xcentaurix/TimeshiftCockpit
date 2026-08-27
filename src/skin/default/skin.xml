@@ -32,7 +32,6 @@
 		<widget backgroundColor="secondBG" borderColor="black" borderWidth="2" font="Regular;38" foregroundColor="foreground" halign="center" position="c-624,6" render="Label" size="1248,74" source="Service" valign="center" zPosition="1">
 			<convert type="COCEventName">Name</convert>
 		</widget>
-		<ePixmap pixmap="dvr/scale1024.png" position="42,87" scale="scale" size="1536,12" zPosition="1"/>
 		<widget alphatest="blend" foregroundColor="yellow" position="42,87" render="Progress" size="1536,12" source="Service" transparent="1" zPosition="5">
 			<convert type="COCServicePosition">Position</convert>
 		</widget>
@@ -48,7 +47,7 @@
 		<widget backgroundColor="secondBG" borderColor="black" borderWidth="2" font="Regular;38" foregroundColor="foreground" halign="right" position="1402,46" render="Label" size="175,37" source="Service" valign="center" zPosition="4">
 			<convert type="COCServicePosition">Remaining</convert>
 		</widget>
-		<widget alphatest="on" pixmap="buttons/rec.png" position="1590,79" render="Pixmap" size="30,30" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="~/images/rec.png" position="1590,79" render="Pixmap" size="30,30" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget backgroundColor="secondBG" borderWidth="2" font="Regular;38" foregroundColor="foreground" halign="right" noWrap="1" position="1428,4" render="Label" size="150,37" source="Service" valign="center" zPosition="1">
@@ -100,10 +99,14 @@
 		<widget backgroundColor="transparent" font="Regular;38" halign="center" name="state" position="0,110" size="100,54" transparent="1" valign="center"/>
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="BufferingProgress" position="center,center" resolution="1920,1080" size="100,100">
-		<widget alphatest="blend" name="pic" position="center,center" size="100,100"/>
+		<widget alphatest="off" name="pic" position="center,center" size="100,100" transparent="0"/>
 	</screen>
 	<screen name="BufferingProgressSummary" position="fill" resolution="396,240">
-		<ePixmap alphatest="on" pixmap="~/../images/display_bg.png" position="0,0" size="e,e" zPosition="-1"/>
-		<widget name="lcd_pic" position="148,70" size="100,100" transparent="1"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TimeshiftCockpit/skin/images/display_bg.png" position="0,0" size="400,240" zPosition="-1"/>
+		<widget name="lcd_pic" position="150,70" size="100,100" transparent="1"/>
+	</screen>
+	<screen name="BufferingProgressSummary" position="fill" resolution="396,240">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TimeshiftCockpit/skin/images/display_bg.png" position="0,0" size="400,240" zPosition="-1"/>
+		<widget name="lcd_pic" position="150,70" size="100,100" transparent="1"/>
 	</screen>
 </skin>

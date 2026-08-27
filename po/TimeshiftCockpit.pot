@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TimeshiftCockpit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-12 09:10+0100\n"
+"POT-Creation-Date: 2026-08-27 16:20+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: xcentaurix\n"
 "Language-Team: \n"
@@ -70,6 +70,55 @@ msgstr ""
 msgid "Inactive"
 msgstr ""
 
+msgid "Select Event"
+msgstr ""
+
+msgid "No timeshift available for playback"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "Setup"
+msgstr ""
+
+msgid ""
+"TimeshiftCockpit has been %s. Restart Enigma2 now for this to take effect?"
+msgstr ""
+
+msgid "activated"
+msgstr ""
+
+msgid "deactivated"
+msgstr ""
+
+msgid "TS recording"
+msgstr ""
+
+msgid "Timeshift recording"
+msgstr ""
+
+msgid "Exit"
+msgstr ""
+
+msgid "Timeshifts Overview"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "fixed"
+msgstr ""
+
+msgid "variable"
+msgstr ""
+
+msgid "recordings"
+msgstr ""
+
+msgid "Configure timeshift modes and channels"
+msgstr ""
+
 msgid "Reset"
 msgstr ""
 
@@ -124,49 +173,10 @@ msgstr ""
 msgid "Select debug log level."
 msgstr ""
 
-msgid "Select Event"
-msgstr ""
-
-msgid "No timeshift available for playback"
-msgstr ""
-
-msgid "min"
-msgstr ""
-
 msgid "Write error while recording. Disk full?"
 msgstr ""
 
-msgid "TS recording"
-msgstr ""
-
-msgid "Timeshift recording"
-msgstr ""
-
-msgid "Exit"
-msgstr ""
-
-msgid "Timeshifts Overview"
-msgstr ""
-
 msgid "Cancel"
-msgstr ""
-
-msgid "type"
-msgstr ""
-
-msgid "fixed"
-msgstr ""
-
-msgid "variable"
-msgstr ""
-
-msgid "recordings"
-msgstr ""
-
-msgid "Setup"
-msgstr ""
-
-msgid "Configure timeshift modes and channels"
 msgstr ""
 
 msgid "End"
