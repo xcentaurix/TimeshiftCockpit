@@ -1,0 +1,20 @@
+skin:
+  children:
+    - xmlinc:
+        file: "screenpart_colors.ymlinc"
+    - xmlinc:
+        file: "screenpart_fonts.noymlinc"
+    - xmlinc:
+        file: "screenpart_ScrollBarStyle.ymlinc"
+    - xmlinc:
+        file: "screen_TimeshiftOverview.ymlinc"
+    - xmlinc:
+        file: "screen_TimeshiftCockpitPlayer.ymlinc"
+    - xmlinc:
+        file: "screen_TimeshiftCockpitPlayerSummary.ymlinc"
+    - xmlinc:
+        file: "screen_ScreenPVRState.ymlinc"
+    - xmlinc:
+        file: "screen_BufferingProgress.ymlinc"
+    - xmlinc:
+        file: "screen_BufferingProgressSummary.ymlinc"

@@ -1,0 +1,25 @@
+screen:
+  backgroundColor: "panelBG"
+  flags: "wfNoBorder"
+  name: "TimeshiftOverview"
+  position: "center,center"
+  size: "1200,720"
+  children:
+    - xmlinc:
+        file: "screenpart_TitleBar.ymlinc"
+    - widget:
+        enableWrapAround: "1"
+        position: "20,65"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "e-40,e-140"
+        source: "list"
+        transparent: "1"
+        children:
+          - xmlinc:
+              file: "screenpart_TimeshiftOverviewList.ymlinc"
+    - xmlinc:
+        file: "screenpart_BottomBar.ymlinc"
+    - xmlinc:
+        file: "screenpart_ButtonBar.ymlinc"
+        position: "0,$screen_height-48"
