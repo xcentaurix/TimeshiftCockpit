@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "panelBG"
-  flags: "wfNoBorder"
   name: "TimeshiftOverview"
   position: "center,center"
   size: "1200,720"
@@ -19,7 +17,4 @@ screen:
           - xmlinc:
               file: "screenpart_TimeshiftOverviewList.ymlinc"
     - xmlinc:
-        file: "screenpart_BottomBar.ymlinc"
-    - xmlinc:
-        file: "screenpart_ButtonBar.ymlinc"
-        position: "0,$screen_height-48"
+        file: "screenpart_Footer.ymlinc"

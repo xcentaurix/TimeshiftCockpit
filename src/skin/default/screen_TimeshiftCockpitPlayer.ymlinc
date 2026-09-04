@@ -1,9 +1,6 @@
 screen:
-  backgroundColor: "secondBG"
-  flags: "wfNoBorder"
   name: "TimeshiftCockpitPlayer"
   position: "150,900"
-  resolution: "1920,1080"
   size: "1620,150"
   title: "CockpitPlayer"
   children:

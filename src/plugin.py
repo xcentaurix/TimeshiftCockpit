@@ -6,6 +6,7 @@ import os
 from Plugins.Plugin import PluginDescriptor
 from Components.config import config
 import Screens.InfoBar
+from skin import findSkinScreen
 from .__init__ import _
 from .Debug import logger
 from .Version import VERSION
@@ -16,7 +17,8 @@ from .FileUtils import deleteFiles
 from .SkinUtils import loadPluginSkin
 
 
-loadPluginSkin()
+if findSkinScreen("TimeshiftOverview") is None:
+    loadPluginSkin()
 
 
 def openSettings(session, **__):
@@ -52,6 +54,10 @@ def Plugins(**__):
                 PluginDescriptor.WHERE_EXTENSIONSMENU,
             ],
             fnc=openSettings
-        )
+        ),
+        PluginDescriptor(
+            where=PluginDescriptor.WHERE_SKINCHANGE,
+            fnc=loadPluginSkin
+        ),
     ]
     return descriptors
